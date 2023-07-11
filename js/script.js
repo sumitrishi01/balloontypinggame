@@ -69,8 +69,12 @@ var updatePgBar = () => {
 
         };
         animate();
-        var backgroundAudio = document.getElementById('backgroundAudio')
-        backgroundAudio.play();
+        // var backgroundAudio = document.getElementById('backgroundAudio')
+        // backgroundAudio.play();
+        // Play the background sound
+        var backgroundSound = new Audio('./sound/2.mp3'); 
+        backgroundSound.loop = true;
+        backgroundSound.play();
     };
 };
 
